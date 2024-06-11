@@ -27,7 +27,7 @@ for _, annotations in TRAIN_DATA:
 optimizer = nlp.begin_training()
 
 # Обучение модели
-total_iterations = 10
+total_iterations = 30
 total_samples = len(TRAIN_DATA)
 for itn in range(total_iterations):
     losses = {}
