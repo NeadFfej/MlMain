@@ -4,8 +4,8 @@ import json
 from tqdm import tqdm
 
 
-spacy.load('ru_core_news_sm')
-#spacy.load('ru_core_news_lg')
+#spacy.load('ru_core_news_sm')
+spacy.load('ru_core_news_lg')
 
 # Загрузка обучающих данных
 #with open('./data/train_data.json', 'r', encoding='utf-8') as f:
@@ -27,7 +27,7 @@ for _, annotations in TRAIN_DATA:
 optimizer = nlp.begin_training()
 
 # Обучение модели
-total_iterations = 30
+total_iterations = 10
 total_samples = len(TRAIN_DATA)
 for itn in range(total_iterations):
     losses = {}
