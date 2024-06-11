@@ -3,7 +3,7 @@ import json
 
 
 # Загрузка обученной модели
-nlp = spacy.load("./data/discount_model_only_true_30or_sm")
+nlp = spacy.load("./data/discount_model_only_true_30for_sm")
 
 # Текст для предсказания
 
