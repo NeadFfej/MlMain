@@ -8,6 +8,7 @@ from assets import modelsT, models_dirs
 
 # Конфиг для юзалки тут 
 # =================================
+# Три параметра ниже воссоздают имя модели по параметрам
 MODEL_TYPE: modelsT = "large"
 MODEL_TRAIN_DATA_FILE: str = "only_true.json"
 MODEL_TOTAL_ITERATIONS: int = 10
