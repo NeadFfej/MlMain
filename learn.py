@@ -23,13 +23,13 @@ for model_size, model_name in copy(models_names).items():
 # Конфиг для обучалки тут
 # =================================
 MODEL_TYPE: modelsT = "small"
-TRAIN_DATA_FILE: str = "only_true.json"
+TRAIN_DATA_FILE: str = "train_data.json"
 
 # Количество итераций обучения
-TOTAL_ITERATIONS: int = 1
+TOTAL_ITERATIONS: int = 200
 # Больше 10 на only_true не имеет смысла
 #  для других объёмов входных данных нужно тестировать
-BATCH_SIZE: int = 10
+BATCH_SIZE: int = 100
 # =================================
 
 
